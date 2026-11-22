@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playlist - Song Details</title>
+    <link rel="stylesheet" href="song-details.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-badge">🎵</span>
+            <span class="logo-title">AUDIO PLAYLIST</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="playlist.html" class="nav-link active">Playlist</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="login.html" class="nav-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="details-container">
+        
+        <!-- Back Button -->
+        <a href="playlist.html" class="back-link">
+            <span class="back-arrow">&lt;</span> Back to Playlist
+        </a>
+
+        <!-- Song Hero Card -->
+        <div class="song-hero-card">
+            <div class="album-cover">
+                <span class="cover-icon">🎶</span>
+                <span class="cover-badge">HQ AUDIO</span>
+            </div>
+            
+            <div class="song-meta">
+                <h1 class="song-title">Song Title</h1>
+                <h3 class="artist-name">Artist Name</h3>
+
+                <div class="meta-tags">
+                    <div class="meta-item">
+                        <span class="meta-label">Category:</span>
+                        <span class="meta-value">Music</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duration:</span>
+                        <span class="meta-value">03:20</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Release Year:</span>
+                        <span class="meta-value">2024</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-play" id="playBtn">
+                    <span class="play-icon">▶</span>
+                    <span>PLAY AUDIO</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="section-card">
+            <h2 class="section-heading">DESCRIPTION</h2>
+            <div class="description-box">
+                <p>Song description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+            </div>
+        </div>
+
+        <!-- Inquiry Section -->
+        <div class="section-card">
+            <h2 class="section-heading">HAVE AN INQUIRY?</h2>
+            <form class="inquiry-form" onsubmit="event.preventDefault(); alert('Inquiry sent successfully!');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">SEND INQUIRY</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Audio Playlist. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

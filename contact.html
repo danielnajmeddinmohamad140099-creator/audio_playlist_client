@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Playlist - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-badge">🎵</span>
+            <span class="logo-title">AUDIO PLAYLIST</span>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="playlist.html" class="nav-link">Playlist</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+            <a href="login.html" class="nav-btn">Login</a>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="contact-container">
+        
+        <div class="page-header">
+            <h1 class="page-title">CONTACT US</h1>
+            <p class="page-subtitle">We'd love to hear from you. Feel free to reach out anytime!</p>
+        </div>
+
+        <!-- Contact Info Cards -->
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-icon">✉️</div>
+                <div class="info-details">
+                    <span class="info-label">Email</span>
+                    <a href="mailto:info@audioplaylist.com" class="info-val">info@audioplaylist.com</a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📞</div>
+                <div class="info-details">
+                    <span class="info-label">Phone</span>
+                    <a href="tel:+911234567890" class="info-val">+91 12345 67890</a>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📍</div>
+                <div class="info-details">
+                    <span class="info-label">Address</span>
+                    <span class="info-val">123 Audio Street, Music City, India - 560001</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="form-card">
+            <h2 class="form-heading">SEND US A MESSAGE</h2>
+            
+            <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Audio Playlist. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
